@@ -201,6 +201,7 @@ function showMessage() {
 
             if(qNumber === 0 && numeric === "1") {
                 isStarted = false;
+                startServer()
             }
 
             index++;
@@ -267,5 +268,6 @@ function showMessage() {
             input.value = val;
         };
     }
+
 
 }
