@@ -199,9 +199,13 @@ function showMessage() {
             addMessage(value, "user");
             saveAnswer(qNumber, numeric);
 
-            if(qNumber === 0 && numeric === "1") {
-                isStarted = false;
-                startServer()
+            if(qNumber === 0) {
+                if(numeric === "0"){
+                    startServer()
+                }
+                else if (numeric === "1"){
+                    isStarted = false;
+                }
             }
 
             index++;
@@ -271,3 +275,4 @@ function showMessage() {
 
 
 }
+
