@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.0.8)");
+console.log("App.js loaded (v1.0.9)");
 
 let messages = [];
 let results = [];
@@ -185,7 +185,9 @@ function showMessage() {
         delayWithTarget(showMessage, 1000);
     }
 
-    addMessage(q.text);
+    else{
+        addMessage(q.text);
+    }
 
     // Radio Input
     if (q.question_type === "radio") {
@@ -289,6 +291,7 @@ function showMessage() {
 
 
 }
+
 
 
 
