@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.3)");
+console.log("App.js loaded (v1.4)");
 
 let messages = [];
 let results = [];
@@ -39,11 +39,17 @@ async function sendToBackend(payload) {
 async function sendData() {
     const payload = collectAnswers();
     delete payload.input0;
-    results = await sendToBackend(payload);
 
-    // console.log(result.output1);
-    // console.log(result.output2);
-    // console.log(result.output3);
+    const response = await sendToBackend(payload);
+    if (!response) return;
+
+    results.push(
+        response.output1,
+        response.output2,
+        response.output3
+    );
+
+    console.log("RESULTS ARRAY:", results);
 }
 
 function fillText(text, values) {
@@ -277,6 +283,7 @@ function showMessage() {
 
 
 }
+
 
 
 
