@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.5)");
+console.log("App.js loaded (v1.0.6)");
 
 let messages = [];
 let results = [];
@@ -151,7 +151,7 @@ function showMessage() {
         return;
     }
 
-    if (qNumber >= messages.filter(item => item.message_type === "question").length - 1 && !isSent) {
+    if (qNumber > messages.filter(item => item.message_type === "question").length - 1 && !isSent) {
         inputArea.style.opacity = "0";
         sendButton.disabled = true;
         isSent = true;
@@ -285,6 +285,7 @@ function showMessage() {
 
 
 }
+
 
 
 
