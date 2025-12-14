@@ -111,7 +111,7 @@
     },
     {
         "message_type":"answer",
-        "text": "🧠 Mental Health: **{a}** / 100\n⚡ Stress Level: **{b}** / 10\n😊 Mood Rating : **{c}** / 10"
+        "text": "🧠 Mental Health -> **{a}** / 100\n⚡ Stress Level -> **{b}** / 10\n😊 Mood Rating -> **{c}** / 10"
     },
     {
         "message_type":"info",
@@ -122,5 +122,6 @@
         "text": "ℹ️ Info tambahan:\n\nPrediksi ini dihasilkan menggunakan metode **K-Nearest Neighbor (KNN)** berdasarkan **5.000 dataset** yang kami miliki. Hasil ini bersifat perkiraan, jadi tetap gunakan sebagai referensi dan bijak dalam menyikapinya ya 🙌"
     }
 ]
+
 
 
