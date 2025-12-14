@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.0.9)");
+console.log("App.js loaded (v1.0.11)");
 
 let messages = [];
 let results = [];
@@ -80,15 +80,15 @@ function delayWithTarget(target, duration) {
     setTimeout(() => {
         area.appendChild(cont);
         scrollToBottom();
-    }, 200);
+        
+        setTimeout(() => {
+            cont.remove();
 
-    setTimeout(() => {
-        cont.remove();
-
-        if (typeof target === "function") {
-            target();
-        }
-    }, duration);
+            if (typeof target === "function") {
+                target();
+            }
+        }, duration);
+    }, 1000);
 }
 
 function renderText(text) {
@@ -291,6 +291,7 @@ function showMessage() {
 
 
 }
+
 
 
 
