@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.0.7)");
+console.log("App.js loaded (v1.0.8)");
 
 let messages = [];
 let results = [];
@@ -179,7 +179,7 @@ function showMessage() {
         inputArea.style.opacity = "0";
         sendButton.disabled = true;
 
-        addMessage(fillText(q.text, {a: results[0], b: results[1], c: results[2]}));
+        addMessage(fillText(q.text, {a: results[0].toFixed(1), b: results[1].toFixed(1), c: results[2].toFixed(1)}));
 
         index++;
         delayWithTarget(showMessage, 1000);
@@ -289,6 +289,7 @@ function showMessage() {
 
 
 }
+
 
 
 
