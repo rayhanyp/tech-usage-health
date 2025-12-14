@@ -1,7 +1,7 @@
 [
     {
         "message_type": "info",
-        "text": "Halo! 👋\nAku ***HealthyBot***, yang bakal nemenin kamu buat ngenalin **kesehatan mental** dan **level stres** kamu berdasarkan kebiasaan penggunaan teknologi. Salam kenal ya! 😄\n⚠️ Catatan kecil: hasil yang kamu dapat nanti bersifat prediksi dan dibuat berdasarkan dataset yang kami miliki.\nKalau kamu siap, yuk bantu aku jawab beberapa pertanyaan ringan biar hasilnya bisa lebih akurat 🙂"
+        "text": "Halo! 👋\n\nAku ***HealthyBot***, yang bakal nemenin kamu buat ngenalin **kesehatan mental** dan **level stres** kamu berdasarkan kebiasaan penggunaan teknologi. Salam kenal ya! 😄\n\n⚠️ Catatan kecil: hasil yang kamu dapat nanti bersifat prediksi dan dibuat berdasarkan dataset yang kami miliki.\nKalau kamu siap, yuk bantu aku jawab beberapa pertanyaan ringan biar hasilnya bisa lebih akurat 🙂"
     },
     {
         "message_type":"question",
@@ -107,14 +107,15 @@
     },
     {
         "message_type":"info",
-        "text": "Berikut hasil prediksi aku mengenai kesehatan mental dan level stres kamu! 😊"
+        "text": "Berikut hasil prediksi aku mengenai **kesehatan mental** dan **level stres** kamu! 😊"
     },
     {
         "message_type":"answer",
-        "text": "🧠 Mental Health: {a}\n⚡ Stress Level: {b}\n😊 Mood Rating : {c}"
+        "text": "🧠 Mental Health: **{a}**\n⚡ Stress Level: **{b}**\n😊 Mood Rating : **{c}**"
     },
     {
         "message_type":"info",
-        "text": "ℹ️ Info tambahan:\nPrediksi ini dihasilkan menggunakan metode K-Nearest Neighbor (KNN) berdasarkan 5.000 dataset yang kami miliki. Hasil ini bersifat perkiraan, jadi tetap gunakan sebagai referensi dan bijak dalam menyikapinya ya 🙌"
+        "text": "ℹ️ Info tambahan:\n\nPrediksi ini dihasilkan menggunakan metode **K-Nearest Neighbor (KNN)** berdasarkan **5.000 dataset** yang kami miliki. Hasil ini bersifat perkiraan, jadi tetap gunakan sebagai referensi dan bijak dalam menyikapinya ya 🙌"
     }
 ]
+
