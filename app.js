@@ -1,4 +1,4 @@
-console.log("App.js loaded");
+console.log("App.js loaded (v1.2)");
 
 let messages = [];
 let results = [];
@@ -221,7 +221,6 @@ function showMessage() {
         inputArea.style.opacity = "1";
         sendButton.disabled = false;
         const max = q.question_type === "slider24" ? 24 : q.question_type === "slider168" ? 168 : 100;
-        console.log("Max slider value:", max);
 
         const box = document.getElementById("inputBox");
         box.innerHTML = "";
@@ -275,5 +274,6 @@ function showMessage() {
 
 
 }
+
 
 
