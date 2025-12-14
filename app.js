@@ -154,6 +154,7 @@ function showMessage() {
     if (qNumber >= messages.filter(item => item.message_type === "question").length - 1 && !isSent) {
         inputArea.style.opacity = "0";
         sendButton.disabled = true;
+        isSent = true;
         sendData();
     }
 
@@ -284,6 +285,7 @@ function showMessage() {
 
 
 }
+
 
 
 
