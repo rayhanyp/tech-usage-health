@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.2)");
+console.log("App.js loaded (v1.3)");
 
 let messages = [];
 let results = [];
@@ -148,6 +148,9 @@ function showMessage() {
         inputArea.style.opacity = "0";
         sendButton.disabled = true;
         sendData();
+    }
+
+    if (index >= messages.length){
         return
     }
 
@@ -274,6 +277,7 @@ function showMessage() {
 
 
 }
+
 
 
 
