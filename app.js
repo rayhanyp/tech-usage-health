@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.0.6)");
+console.log("App.js loaded (v1.0.7)");
 
 let messages = [];
 let results = [];
@@ -163,12 +163,14 @@ function showMessage() {
     }
 
     const q = messages[index];
-    addMessage(q.text);
 
     // Message Info
     if (q.message_type === "info") {
         inputArea.style.opacity = "0";
         sendButton.disabled = true;
+
+        addMessage(q.text);
+        
         index++;
         delayWithTarget(showMessage, 1000);
     }
@@ -182,6 +184,8 @@ function showMessage() {
         index++;
         delayWithTarget(showMessage, 1000);
     }
+
+    addMessage(q.text);
 
     // Radio Input
     if (q.question_type === "radio") {
@@ -285,6 +289,7 @@ function showMessage() {
 
 
 }
+
 
 
 
