@@ -1,4 +1,4 @@
-console.log("App.js loaded (v1.0.11)");
+console.log("App.js loaded (v1.0.12)");
 
 let messages = [];
 let results = [];
@@ -66,6 +66,10 @@ function startServer(){
 }
 
 function delayWithTarget(target, duration) {
+    if(index >= messages.length){
+        return;
+    }
+    
     const area = document.getElementById("chatArea");
     const cont = document.createElement("div");
     cont.className = "typing-message bot";
@@ -291,6 +295,7 @@ function showMessage() {
 
 
 }
+
 
 
 
