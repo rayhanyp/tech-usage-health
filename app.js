@@ -95,7 +95,7 @@ function renderText(text) {
   return text
     .replace(/\*\*(.*?)\*\*/g, "<b class='bold-text'>$1</b>")
     .replace(/\*(?!\*)(.*?)\*/g, "<i>$1</i>")
-    .replace(/\r?\n/g, "<br><br>");
+    .replace(/\r?\n/g, "<br>");
 }
 
 
@@ -291,6 +291,7 @@ function showMessage() {
 
 
 }
+
 
 
 
