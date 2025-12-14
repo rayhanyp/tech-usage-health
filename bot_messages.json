@@ -1,7 +1,7 @@
 [
     {
         "message_type": "info",
-        "text": "Halo! 👋\n\nAku ***HealthyBot***, yang bakal nemenin kamu buat ngenalin **kesehatan mental** dan **level stres** kamu berdasarkan kebiasaan penggunaan teknologi. Salam kenal ya! 😄\n\n⚠️ Catatan kecil: hasil yang kamu dapat nanti bersifat prediksi dan dibuat berdasarkan dataset yang kami miliki.\nKalau kamu siap, yuk bantu aku jawab beberapa pertanyaan ringan biar hasilnya bisa lebih akurat 🙂"
+        "text": "Halo! 👋\n\nAku ***HealthyBot***, yang bakal nemenin kamu buat ngenalin **kesehatan mental** dan **level stres** kamu berdasarkan kebiasaan penggunaan teknologi. Salam kenal ya! 😄\n\n⚠️ Catatan kecil: hasil yang kamu dapat nanti bersifat prediksi dan dibuat berdasarkan dataset yang kami miliki.\n\nKalau kamu siap, yuk bantu aku jawab beberapa pertanyaan ringan biar hasilnya bisa lebih akurat 🙂"
     },
     {
         "message_type":"question",
@@ -111,11 +111,16 @@
     },
     {
         "message_type":"answer",
-        "text": "🧠 Mental Health: **{a}**\n⚡ Stress Level: **{b}**\n😊 Mood Rating : **{c}**"
+        "text": "🧠 Mental Health: **{a}** / 100\n⚡ Stress Level: **{b}** / 10\n😊 Mood Rating : **{c}** / 10"
+    },
+    {
+        "message_type":"info",
+        "text": "📌 Penjelasan arah skor:\n\n**Mental Health**: semakin besar angkanya → semakin baik kondisi mentalmu\n**Stress Level**: semakin kecil angkanya → semakin rendah tingkat stresmu\n**Mood Rating**: semakin besar angkanya → semakin positif mood-mu"
     },
     {
         "message_type":"info",
         "text": "ℹ️ Info tambahan:\n\nPrediksi ini dihasilkan menggunakan metode **K-Nearest Neighbor (KNN)** berdasarkan **5.000 dataset** yang kami miliki. Hasil ini bersifat perkiraan, jadi tetap gunakan sebagai referensi dan bijak dalam menyikapinya ya 🙌"
     }
 ]
+
 
