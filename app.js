@@ -1,10 +1,11 @@
-console.log("App.js loaded (v1.4)");
+console.log("App.js loaded (v1.5)");
 
 let messages = [];
 let results = [];
 let index = 0;
 let qNumber = 0;
 let isStarted = true;
+let isSent = false;
 
 fetch("bot_messages.json")
 .then(res => res.json())
@@ -150,7 +151,7 @@ function showMessage() {
         return;
     }
 
-    if (qNumber >= messages.filter(item => item.message_type === "question").length - 1) {
+    if (qNumber >= messages.filter(item => item.message_type === "question").length - 1 && !isSent) {
         inputArea.style.opacity = "0";
         sendButton.disabled = true;
         sendData();
@@ -283,6 +284,7 @@ function showMessage() {
 
 
 }
+
 
 
 
