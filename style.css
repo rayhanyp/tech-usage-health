@@ -158,7 +158,7 @@ input[type="radio"]:checked+label {
 
 .slider {
     padding-inline: 32px;
-    gap: 24px;
+    gap: 8px;
 }
 
 .slider-input {
@@ -166,9 +166,11 @@ input[type="radio"]:checked+label {
 }
 
 .slider-value#valueBox {
-    width: 32px;
+    width: 24px;
     text-align: center;
     border: none;
+    border-bottom: 1px solid var(--primary-color);
+    padding-block: 2px;
     color: var(--primary-color);
     background: transparent;
     font-family: "Poppins", sans-serif;
@@ -263,4 +265,5 @@ input[type="radio"]:checked+label {
     }
 
 }
+
 
