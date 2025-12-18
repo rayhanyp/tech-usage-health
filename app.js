@@ -271,7 +271,6 @@ function showMessage() {
 
         const slider = document.getElementById("sliderRange");
         const input  = document.getElementById("valueBox");
-  });
 
         // slider → input
         slider.oninput = function () {
@@ -298,6 +297,7 @@ function showMessage() {
 
 
 }
+
 
 
 
