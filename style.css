@@ -257,15 +257,13 @@ input[type="radio"]:checked+label {
     }
 }
 
-@media (max-width:420px) {
-    .dot {
-        width: 12px;
-        height: 12px;
-    }
-}
-
 @media (max-width: 768px) {
     .content {
         width: 100vw;
     }
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+
 }
