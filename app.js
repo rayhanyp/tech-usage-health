@@ -250,7 +250,7 @@ function showMessage() {
 
         box.innerHTML = `
             <input type="range" min="0" max="${max}" step="${q.label === "Umur" ? '1' : '0.1'}" value="0" class="slider-input" id="sliderRange">
-            <input type="number" step="${q.label === "Umur" ? '1' : '0.1'}" class="slider-value" id="valueBox" value="0" min="0" max="${max}">
+            <input type="text" inputmode="decimal" class="slider-value" id="valueBox" value="0">
 
         `;
 
@@ -271,6 +271,7 @@ function showMessage() {
 
         const slider = document.getElementById("sliderRange");
         const input  = document.getElementById("valueBox");
+  });
 
         // slider → input
         slider.oninput = function () {
@@ -279,6 +280,8 @@ function showMessage() {
 
         // input → slider
         input.oninput = function () {
+            this.value = this.value.replace(/[^0-9,]/g, '');
+
             // ubah koma jadi titik
             let raw = this.value.replace(",", ".");
             let val = parseFloat(raw);
@@ -295,6 +298,7 @@ function showMessage() {
 
 
 }
+
 
 
 
